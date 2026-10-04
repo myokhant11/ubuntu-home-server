@@ -1,4 +1,4 @@
-\# Ubuntu Home Server
+# Ubuntu Home Server
 
 
 
@@ -10,23 +10,23 @@ The server provides network-wide DNS filtering with Pi-hole and private cloud st
 
 
 
-\## Project Goals
+## Project Goals
 
 
 
-\- Repurpose existing hardware as a home server
+- Repurpose existing hardware as a home server
 
-\- Block advertisements and tracking domains across the home network
+- Block advertisements and tracking domains across the home network
 
-\- Provide private file storage accessible from devices on the local network
+- Provide private file storage accessible from devices on the local network
 
-\- Learn Linux server administration, networking, DNS, Docker, and service troubleshooting
+- Learn Linux server administration, networking, DNS, Docker, and service troubleshooting
 
-\- Build a foundation for adding more self-hosted services later
+- Build a foundation for adding more self-hosted services later
 
 
 
-\## Architecture
+## Architecture
 
 
 
@@ -60,13 +60,13 @@ flowchart TD
 
 
 
-\## Technology Stack
+## Technology Stack
 
 
 
 | Component | Purpose |
 
-|---|---|
+|---|---:|
 
 | Ubuntu 24.04.5 LTS | Host operating system |
 
@@ -80,19 +80,19 @@ flowchart TD
 
 
 
-\## Hardware and Network
+## Hardware and Network
 
 
 
-\- \*\*Device:\*\* HP Pavilion x360 laptop
+- \*\*Device:\*\* HP Pavilion x360 laptop
 
-\- \*\*Connection:\*\* Wi-Fi
+- \*\*Connection:\*\* Wi-Fi
 
-\- \*\*Addressing:\*\* Static private IP address
+- \*\*Addressing:\*\* Static private IP address
 
-\- \*\*Scope:\*\* Local home network
+- \*\*Scope:\*\* Local home network
 
-\- \*\*DNS configuration:\*\* The router distributes the Pi-hole server address to network clients
+- \*\*DNS configuration:\*\* The router distributes the Pi-hole server address to network clients
 
 
 
@@ -100,7 +100,7 @@ The real IP address, hostname, credentials, and other private network details ar
 
 
 
-\## Pi-hole
+## Pi-hole
 
 
 
@@ -123,9 +123,7 @@ sudo pihole status
 ```
 
 
-
 The web dashboard is available inside the local network:
-
 
 
 ```text
@@ -136,7 +134,7 @@ http://<SERVER-IP>/admin
 
 
 
-\## Docker
+## Docker
 
 
 
@@ -164,7 +162,7 @@ docker ps
 
 
 
-\## Nextcloud
+## Nextcloud
 
 
 
@@ -208,7 +206,7 @@ docker ps
 
 
 
-\## Verification
+## Verification
 
 
 
@@ -263,77 +261,74 @@ The Nextcloud web interface is available to devices on the local network through
 
 
 
-\## Security and Privacy
+## Security and Privacy
 
 
 
-\- Administrative interfaces are intended for access from the local network
+- Administrative interfaces are intended for access from the local network
 
-\- Strong passwords are used for the Pi-hole and Nextcloud administrator accounts
+- Strong passwords are used for the Pi-hole and Nextcloud administrator accounts
 
-\- Credentials and private configuration files are excluded from version control
+- Credentials and private configuration files are excluded from version control
 
-\- Real IP addresses, device names, DNS query history, and personal files are not published
+- Real IP addresses, device names, DNS query history, and personal files are not published
 
-\- The operating system and installed services are updated regularly
+- The operating system and installed services are updated regularly
 
 
 
-\## Repository Structure
+## Repository Structure
 
 
 
 ```text
 
-ubuntu-home-server/
-
-├── config\_examples/   # Sanitized configuration examples
-
-├── docs/              # Additional project documentation
-
-├── screenshots/       # Screenshots with private details removed
-
-└── README.md           # Project overview
+.
+└──ubuntu-home-server/
+   ├── config\_examples/   # Sanitized configuration examples
+   ├── docs/              # Additional project documentation
+   ├── screenshots/       # Screenshots with private details removed
+   └── README.md           # Project overview
 
 ```
 
 
 
-\## Skills Required
+## Skills Required
 
 
 
-\- Linux system administration
+- Linux system administration
 
-\- Static IP and local network configuration
+- Static IP and local network configuration
 
-\- DNS configuration and troubleshooting
+- DNS configuration and troubleshooting
 
-\- Docker container management
+- Docker container management
 
-\- Self-hosted service deployment
+- Self-hosted service deployment
 
-\- Firewall and service port configuration
+- Firewall and service port configuration
 
-\- Technical documentation
+- Technical documentation
 
-\- Git and GitHub
-
-
-
-\## Possible Future Improvements
+- Git and GitHub
 
 
 
-\- Configure HTTPS for Nextcloud
+## Possible Future Improvements
 
-\- Add automated backups
 
-\- Add container health monitoring
 
-\- Deploy Home Assistant
+- Configure HTTPS for Nextcloud
 
-\- Configure WireGuard for secure remote access
+- Add automated backups
 
-\- Add Docker Compose for reproducible container deployment
+- Add container health monitoring
+
+- Deploy Home Assistant
+
+- Configure WireGuard for secure remote access
+
+- Add Docker Compose for reproducible container deployment
 
