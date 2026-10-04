@@ -65,17 +65,11 @@ flowchart TD
 
 
 | Component | Purpose |
-
 |---|---:|
-
 | Ubuntu 24.04.5 LTS | Host operating system |
-
 | Pi-hole | Network-wide DNS filtering |
-
 | Docker Engine | Container platform |
-
 | Nextcloud | Private cloud storage |
-
 | Git and GitHub | Project documentation and version control |
 
 
@@ -84,15 +78,15 @@ flowchart TD
 
 
 
-- \*\*Device:\*\* HP Pavilion x360 laptop
+- **Device:** HP Pavilion x360 laptop
 
-- \*\*Connection:\*\* Wi-Fi
+- **Connection:** Wi-Fi
 
-- \*\*Addressing:\*\* Static private IP address
+- **Addressing:** Static private IP address
 
-- \*\*Scope:\*\* Local home network
+- **Scope:** Local home network
 
-- \*\*DNS configuration:\*\* The router distributes the Pi-hole server address to network clients
+- **DNS configuration:** The router distributes the Pi-hole server address to network clients
 
 
 
