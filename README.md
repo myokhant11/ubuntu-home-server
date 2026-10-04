@@ -246,6 +246,23 @@ Expected results:
 
 
 
+## Screenshots
+
+### Pi-hole Dashboard
+
+The Pi-hole dashboard confirms that network devices are sending DNS requests through the server and that matching requests are being blocked.
+
+![Pi-hole dashboard](screenshots/pihole-dashboard.png)
+
+### Nextcloud Files
+
+The Nextcloud web interface is available to devices on the local network through the Docker container.
+
+![Nextcloud Files interface](screenshots/nextcloud_files.png)
+
+
+
+
 \## Security and Privacy
 
 
