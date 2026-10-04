@@ -1,0 +1,38 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+secrets/
+credentials*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Pi-hole live configuration and databases
+pihole.toml
+setupVars.conf
+gravity.db
+pihole-FTL.db
+etc-pihole/
+
+# Nextcloud data
+nextcloud_data/
+nextcloud-data/
+config.php
+
+# Backups, databases, and logs
+backups/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor settings
+.vscode/
+.idea/
